@@ -11,7 +11,8 @@ func main() {
 	fmt.Println("Hello, " + userName + "!")
 	fmt.Println("Your age is: " + strconv.Itoa(age))
 	calculateArea()
-}
+	stutement()
+	}
 
 func calculateArea()  {
 	a := 10
@@ -31,4 +32,18 @@ func calculateArea()  {
 	fmt.Println("Is a less than b? " + strconv.FormatBool(notGreater))
 	fmt.Println("Is a greater than b? " + strconv.FormatBool(isGreater))
 
+}
+
+
+func stutement()  {
+	// if statement
+	a := 10
+	b := 5
+	if a > b {
+		fmt.Println("a is greater than b")
+	} else if a < b {
+		fmt.Println("a is less than b")
+	} else {
+		fmt.Println("a is equal to b")
+	}
 }
