@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"strconv"
 )
 
@@ -12,6 +13,7 @@ func main() {
 	fmt.Println("Your age is: " + strconv.Itoa(age))
 	calculateArea()
 	stutement()
+	login("admin", "12345")
 	}
 
 func calculateArea()  {
@@ -45,5 +47,16 @@ func stutement()  {
 		fmt.Println("a is less than b")
 	} else {
 		fmt.Println("a is equal to b")
+	}
+}
+
+
+func login(username string, password string) bool {
+	if username == "admin" && password == "12345" {
+		fmt.Println("Login successful!")
+		return true
+	} else {
+		fmt.Println("Login failed. Invalid username or password.")
+		return false
 	}
 }
